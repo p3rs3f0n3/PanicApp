@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">PanicApp</string>
+    <string name="accessibility_service_description">Servicio de emergencia por doble toque</string>
+</resources>
