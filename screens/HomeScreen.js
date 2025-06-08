@@ -14,13 +14,16 @@ function HomeScreen({ navigation }) {
         <Text style={styles.buttonText}>📍 Compartir Ubicación</Text>
       </TouchableOpacity>
 
-      <TouchableOpacity style={styles.button} onPress={() => navigation.navigate('Wallet')}>
+      {/*<TouchableOpacity style={styles.button} onPress={() => navigation.navigate('Wallet')}>
         <Text style={styles.buttonText}>💰 Configurar Wallet</Text>
-      </TouchableOpacity>
+      </TouchableOpacity>*/}
 
-      <TouchableOpacity style={[styles.button, { backgroundColor: '#FF4444' }]}>
+      <TouchableOpacity style={[styles.button, { backgroundColor: '#FF4444' }]}
+        onPress={() => navigation.navigate('Alert')}
+      >
         <Text style={styles.buttonText}>🚨 Activar Alerta</Text>
       </TouchableOpacity>
+      
     </View>
   );
 };
